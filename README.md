@@ -13,7 +13,7 @@ Available commands:
       Where
       -g gender is optional
 
-      For Example
+      For Example:
       python script_name.py --average -t Pomorskie -y 2015 -g men
 
 
@@ -24,7 +24,7 @@ Available commands:
       Where
       -g gender is optional
 
-      For Example
+      For Example:
       python script_name.py --territory-pass-rate -t Pomorskie -g women
       python script_name.py --territory-pass-rate -t Pomorskie
 
@@ -35,7 +35,7 @@ Available commands:
       Where
       -g gender is optional
 
-      For Example
+      For Example:
       python script_name.py --best-pass-rate -y 2016 -g men
 
 4) Detection of territory, which recorded regression, if they are in the collection
@@ -45,7 +45,7 @@ Available commands:
       Where
       -g gender is optional
 
-      For Example
+      For Example:
       python script_name.py --regression
 
 5) Comparison of two territories - for the two territories listed,
@@ -56,5 +56,5 @@ Available commands:
       Where
       -g gender is optional
 
-      For Example
+      For Example:
       python script_name.py --compare -t Pomorskie -w Dolnośląskie -g women
