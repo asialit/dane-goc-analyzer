@@ -46,7 +46,7 @@ def average(data: DataSet, parameters: list):
     year = int(get_parameter(parameters, '-y'))
     if '-g' in sys.argv:
         gender = get_parameter(parameters, '-g')
-        if gender != 'women' or gender != 'men':
+        if gender != 'women' and gender != 'men':
             print("Wrong parameters after -g")
             sys.exit()
         else:
@@ -60,7 +60,7 @@ def territory_pass_rate(data: DataSet, parameters: list, counter: int):
     territory = get_parameter(parameters, '-t')
     if '-g' in sys.argv:
         gender = get_parameter(parameters, '-g')
-        if gender != 'women' or gender != 'men':
+        if gender != 'women' and gender != 'men':
             print("Wrong parameters after -g")
             sys.exit()
         else:
@@ -74,7 +74,7 @@ def best_pass_rate(data: DataSet, parameters: list, counter: int):
     year = int(get_parameter(parameters, '-y'))
     if '-g' in sys.argv:
         gender = get_parameter(parameters, '-g')
-        if gender != 'women' or gender != 'men':
+        if gender != 'women' and gender != 'men':
             print("Wrong parameters after -g")
             sys.exit()
         else:
@@ -87,7 +87,7 @@ def best_pass_rate(data: DataSet, parameters: list, counter: int):
 def regression(data: DataSet, parameters: list, counter: int):
     if '-g' in sys.argv:
         gender = get_parameter(parameters, '-g')
-        if gender != 'women' or gender != 'men':
+        if gender != 'women' and gender != 'men':
             print("Wrong parameters after -g")
             sys.exit()
         else:
@@ -103,7 +103,7 @@ def compare(data: DataSet, parameters: list, counter: int):
     territory2 = get_parameter(parameters, '-w')
     if '-g' in sys.argv:
         gender = get_parameter(parameters, '-g')
-        if gender != 'women' or gender != 'men':
+        if gender != 'women' and gender != 'men':
             print("Wrong parameters after -g")
             sys.exit()
         else:
